@@ -48,6 +48,7 @@ app.on("ready", () => {
   const template = menu.createTemplate(app.name);
   const builtMenu = Menu.buildFromTemplate(template);
   Menu.setApplicationMenu(builtMenu);
+  console.log(`Done`);
 });
 
 // Quit when all windows are closed.
@@ -57,6 +58,7 @@ app.on("window-all-closed", () => {
 
 ipcMain.on('app_version', (event) => {
   event.sender.send('app_version', { version: app.getVersion() });
+  console.log(`version: ${app.getVersion()}`);
 });
 
 autoUpdater.on('update-available', () => {

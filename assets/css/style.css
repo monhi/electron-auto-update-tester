@@ -5,4 +5,12 @@ body {
   padding: 0;
   -webkit-user-select: none;
   -webkit-app-region: drag;
+  
+      box-sizing: border-box;
+      margin: 0;
+      padding: 20px;
+      font-family: sans-serif;
+      background-color: #eaeaea;
+      text-align: left;  
+  
 }
