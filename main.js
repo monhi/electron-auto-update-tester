@@ -63,14 +63,17 @@ ipcMain.on('app_version', (event) => {
 
 autoUpdater.on('update-available', () => {
   mainWindow.webContents.send('update_available');
+  console.log('update-available');
 });
 
 autoUpdater.on('update-downloaded', () => {
   mainWindow.webContents.send('update_downloaded');
+  console.log('update-downloaded');
 });
 
 ipcMain.on('restart_app', () => {
   autoUpdater.quitAndInstall();
+  console.log('restart_app');
 });
 
 

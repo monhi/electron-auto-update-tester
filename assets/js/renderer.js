@@ -1,20 +1,7 @@
 const { ipcRenderer } = require('electron');
-
-/*
 const notification = document.getElementById('notification');
 const message = document.getElementById('message');
 const restartButton = document.getElementById('restart-button');
-
-const version = document.getElementById('version');
-
-ipcRenderer.on('app_version', (event, arg) => {
-  ipcRenderer.removeAllListeners('app_version');
-  version.innerText = 'Version ' + arg.version;
-  alert("1233");
-});
-
-ipcRenderer.send('app_version');
-
 
 
 ipcRenderer.on('update_available', () => {
@@ -29,11 +16,24 @@ ipcRenderer.on('update_downloaded', () => {
   restartButton.classList.remove('hidden');
   notification.classList.remove('hidden');
 });
+
+
+/*
+const version = document.getElementById('version');
+
+ipcRenderer.on('app_version', (event, arg) => {
+  ipcRenderer.removeAllListeners('app_version');
+  version.innerText = 'Version ' + arg.version;
+  alert("1233");
+});
+
+ipcRenderer.send('app_version');
 */
 
 function closeNotification() 
 {
-  notification.classList.add('hidden');
+  const notification = document.getElementById('notification');
+  notification.classList.add('hidden');  
 }
     
 function restartApp() 
