@@ -35,18 +35,15 @@ As the file is in my .gitignore list you could not see the contents of it.
 
 But you are supposed to create a file with following contents and fill the token based on your repository.
 
-Following link gives you enough information to create a token for your repository.
-
-<a href=""https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#:~:text=been%20verified%20yet.-,In%20the%20upper%2Dright%20corner%20of%20any%20page%2C%20click%20your,Generate%20new%20token%20(classic)."">
-How to create a token for github repository
-</a>
-
-
-
-
 ```
 appId: com.action-tester.ElectronAutoUpdate
 publish:
   provider: github
   token: "github_pat_XXXXXXXXXXXXXXXXXXXXXX_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 ```
+
+Following link gives you enough information to create a token for your repository.
+
+[a link]("https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#:~:text=been%20verified%20yet.-,In%20the%20upper%2Dright%20corner%20of%20any%20page%2C%20click%20your,Generate%20new%20token%20(classic).")
+
+
